@@ -5,6 +5,10 @@ build/
 .flutter-plugins-dependencies
 .packages
 
+build/
+.dart_tool/
+.gradle/
+**/build/
 # Pub
 pubspec.lock
 
