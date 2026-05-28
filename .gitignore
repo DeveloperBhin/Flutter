@@ -34,3 +34,8 @@ ios/Runner.xcworkspace
 
 # Logs
 *.log
+build/
+*.apk
+*.aab
+.dart_tool/
+.gradle/
