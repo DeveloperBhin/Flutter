@@ -1,41 +1,5 @@
-# Flutter/Dart build files
-build/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-
 build/
 .dart_tool/
 .gradle/
-**/build/
-# Pub
-pubspec.lock
-
-# Android
-android/.gradle/
-android/app/build/
-android/build/
-
-# iOS
-ios/Pods/
-ios/.symlinks/
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-ios/Runner.xcworkspace
-
-# IDEs
-.idea/
-.vscode/
-*.iml
-
-# Mac system files
-.DS_Store
-
-# Logs
-*.log
-build/
 *.apk
 *.aab
-.dart_tool/
-.gradle/
