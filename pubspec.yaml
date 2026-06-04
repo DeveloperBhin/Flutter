@@ -1,5 +1,5 @@
-name: planty
-description: "PlantDoctor - AI-powered plant disease detection app"
+name: tari_disease_detector
+description: "TARI DISEASE DETECTOR - AI-powered plant disease detection app"
 publish_to: 'none'
 version: 1.0.0+1
 
