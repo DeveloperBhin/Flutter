@@ -121,5 +121,6 @@ flutter run -d linux
 flutter clean
 flutter pub get
 flutter run -d 192.168.1.150:5555
+jupyter notebook
 
 -->
