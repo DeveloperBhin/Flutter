@@ -5,6 +5,7 @@ import 'register_page.dart';
 import 'scan_page.dart';
 import 'me_page.dart';
 import 'main_page.dart';
+import 'index_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

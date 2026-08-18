@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'scan_page.dart';
+import 'history_page.dart';
+import 'crop_page.dart';
 
 
 class IndexPage extends StatefulWidget {
@@ -309,9 +311,20 @@ class _IndexPageState extends State<IndexPage> {
                         ),
 
                         TextButton(
-                          onPressed: () {
-                            // TODO: Open scan history
-                          },
+                          
+                                              onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                               HistoryPage(
+  onBack: () {
+    Navigator.pop(context);
+  },
+),
+  ),
+                              );
+                              },
                           child: const Text(
                             'See All ›',
                             style: TextStyle(
@@ -364,7 +377,7 @@ class _IndexPageState extends State<IndexPage> {
                           MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          'Tutorials for Guide',
+                          'Available Crops',
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -373,9 +386,24 @@ class _IndexPageState extends State<IndexPage> {
                         ),
 
                         TextButton(
-                          onPressed: () {
-                            // TODO: Open tutorials
-                          },
+                                           onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                               CropPage(
+  onBack: () {
+    Navigator.pop(context);
+  },
+ 
+  onScan: () {
+    // open ScanPage here
+  },
+
+),
+  ),
+                              );
+                              },
                           child: const Text(
                             'See All ›',
                             style: TextStyle(
@@ -412,7 +440,7 @@ class _IndexPageState extends State<IndexPage> {
                                   BorderRadius.circular(10),
                             ),
                             child: const Icon(
-                              Icons.menu_book_outlined,
+                            Icons.eco_outlined,
                               color: Color(0xFF20C95A),
                             ),
                           ),
@@ -425,7 +453,7 @@ class _IndexPageState extends State<IndexPage> {
                                   CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Farming Guide',
+                                  'Crops',
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight:
@@ -438,7 +466,7 @@ class _IndexPageState extends State<IndexPage> {
                                 SizedBox(height: 2),
 
                                 Text(
-                                  'Learn about different plants, how to\n'
+                                  'Access different plants, how to\n'
                                   'take care of them, their common\n'
                                   'diseases and how to treat them.',
                                   style: TextStyle(

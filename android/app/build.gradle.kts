@@ -3,7 +3,7 @@ import java.io.FileInputStream
 
 plugins {
     id("com.android.application")
-    id("kotlin-android")
+    // id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
@@ -16,17 +16,20 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.olimata.planty"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = "28.0.12916984"
+    compileSdk = 37
+    ndkVersion = "28.2.13676358"
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
+compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
-    }
+kotlinOptions {
+    jvmTarget = JavaVersion.VERSION_17.toString()
+}
+// kotlinOptions {
+//     jvmTarget = JavaVersion.VERSION_21.toString()
+// }
 
     // signingConfigs {
     //     create("release") {

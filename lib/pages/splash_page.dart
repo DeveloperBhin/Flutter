@@ -14,7 +14,10 @@ import 'package:provider/provider.dart';
 import '../data/disease_info_loader.dart';
 import '../providers/app_provider.dart';
 import '../services/model_service.dart';
+// import 'home_page.dart';
+import 'main_page.dart';
 import 'home_page.dart';
+
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -105,11 +108,19 @@ class _SplashPageState extends State<SplashPage>
   }
 
   /// Navigate to HomePage, replacing the splash screen in the navigation stack
+  // void _navigateToHome() {
+  //   Navigator.of(context).pushReplacement(
+  //     MaterialPageRoute(builder: (context) => const HomePage()),
+  //   );
+  // }
+
   void _navigateToHome() {
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context) => const HomePage()),
-    );
-  }
+  Navigator.of(context).pushReplacement(
+    MaterialPageRoute(
+      builder: (context) => const HomePage(),
+    ),
+  );
+}
 
   @override
   Widget build(BuildContext context) {
@@ -160,7 +171,7 @@ class _SplashPageState extends State<SplashPage>
 
                 // App name
                 Text(
-                  'PlantDoctor',
+                  'TARI DISEASE DETECTOR',
                   style: theme.textTheme.headlineLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: colorScheme.primary,

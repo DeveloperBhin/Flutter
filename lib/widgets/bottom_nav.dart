@@ -48,9 +48,9 @@ class BottomNav extends StatelessWidget {
         ),
 
         BottomNavigationBarItem(
-          icon: Icon(Icons.menu_book_outlined),
-          activeIcon: Icon(Icons.menu_book),
-          label: 'Knowledge',
+          icon: Icon(Icons.eco_outlined),
+          activeIcon: Icon(Icons.eco_outlined),
+          label: 'Crops',
         ),
 
         BottomNavigationBarItem(

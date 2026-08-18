@@ -17,13 +17,12 @@ dependencies:
   provider: ^6.1.2
   
   # Camera access for live preview and capture
-  camera: ^0.11.0+2
-  
+  camera: ^0.12.0+2  
   # Image picker for gallery access (alternative to camera)
   image_picker: ^1.1.2
   
   # TensorFlow Lite for ML inference
-  tflite_flutter: ^0.11.0
+  tflite_flutter: ^0.12.1
   
   # Image processing utilities (for preprocessing before inference)
   image: ^4.3.0

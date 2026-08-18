@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'home_page.dart';
 import 'index_page.dart';
 import 'scan_page.dart';
 import 'me_page.dart';
+import 'history_page.dart';
+import 'crop_page.dart';
 
 import '../widgets/bottom_nav.dart';
 
@@ -16,18 +18,29 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
 
-  List<Widget> get _pages => [
-        const IndexPage(),
+List<Widget> get _pages => [
+  const IndexPage(
+    
+  ),
+        // const Center(
+        //   child: Text(
+        //     'History',
+        //     style: TextStyle(
+        //       fontSize: 24,
+        //       fontWeight: FontWeight.bold,
+        //     ),
+        //   ),
+        // ),
 
-        const Center(
-          child: Text(
-            'History',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+           HistoryPage(
+          onBack: () {
+            setState(() {
+              _currentIndex = 0;
+            });
+          },
         ),
+
+
 
         ScanPage(
           onBack: () {
@@ -37,14 +50,20 @@ class _MainPageState extends State<MainPage> {
           },
         ),
 
-        const Center(
-          child: Text(
-            'Knowledge',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+         
+
+        CropPage(
+          
+          onBack: () {
+            setState(() {
+              _currentIndex = 0;
+            });
+          },
+           onScan: () {
+    setState(() {
+              _currentIndex = 0;
+    });
+  },
         ),
 
 MePage(
